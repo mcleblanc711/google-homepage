@@ -1,0 +1,17 @@
+body{
+
+}
+h1{
+
+}
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img-div{
+    background: #FFF;
+    padding: 10px;
+    margin: 0;
+  }
+}
