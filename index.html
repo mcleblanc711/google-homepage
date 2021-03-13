@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Google></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Google</title>
 </head>
-<main>
-<figure id="img-div">
+
+<body>
+
+    <!-- Nav -->
+    <div class="topnav">
+    <ul class="topnav">
+    <li class="topnav"><a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+    <li class="topnav"><a href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a></li>
+    <li class="topnav"><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
+    <li class="topnav"><a href="https://www.google.ca/imghp?hl=en&ogbl">Images</a></li>
+    <li class="topnav__profile"><a href="https://github.com/mcleblanc711" target="_blank"></a></li>
+  </div>
+  </header>
+<!-- Main Page -->
+<div class="page">
+  <div class="img">
   <img
   id="img"
   src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-  alt = "Google"
+  alt = "Google Logo"
   />
-</figure>
+</div>
+
+<div class="search">
 <form>
   <label for="search">Search</label>
   <input type="text" id="search" name="search">
+  <br>
   <label for="google">Google Search</label>
-  <input type="button" id="google" name="google">
-  <input type="button" id="lucky" name=lucky">
-
+  <input class="button" type="button" id="google" name="google">
   <label for="button">I'm Feeling Lucky</label>
-  <input type="button" id="lucky" name=lucky">
+  <input class="button" type="button" id="lucky" name="lucky">
 
 </form>
-</main>
-<footer>
-    <p>Googled offered in: <a
-      id="french-link"
-      href="https://www.google.com/"
-      target="_blank"
-      >French.</a>
+</div>
+  <div class="francais">Googled offered in: <a
+  id="french-link"
+  href="https://www.google.com/"
+  target="_blank">
+  French
+</a>
+  </div>
+<div class="footer">
+  <ul class="footer">
+   <li class="footer"><a href="https://ads.google.com/intl/en_ca/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+   <li class="footer"><a href="https://smallbusiness.withgoogle.com/intl/en_ca/help/#!/">Business</a></li>
+   <li class="footer"><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+   <li class="footer"><a href="https://policies.google.com/privacy?hl=en-CA&fg=1">Privacy</a></li>
+   <li class="footer"><a href="https://policies.google.com/terms?hl=en-CA&fg=1">Terms</a></li>
+   <li class="footer"><a href="https://policies.google.com/privacy?hl=en-CA&fg=1">Settings</a></li>
+
+ </ul>
+</div>
+  </div>
+</div>
+
   </html>
