@@ -1,10 +1,77 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Declaring variables */
+:root {
+  --border-color: #ddd;
+  --button-search-font: #3c4043;
+  --button-search-background: #f8f9fa;
+  --footer-background: #f2f2f2;
+  --footer-font: #70757a;
+  --footer-font-hover: #3c4043;
+  --footer-font-active: #ea4335;
+}
+
 .page {
   width: 100%;
   height: 100%;
 }
 
+/* Ul Formatting for Navigation Bar+Footer */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* Nav */
+/* Navigation Bar */
 .topnav {
   text-align: center;
   justify-content: center;
@@ -16,11 +83,6 @@
   text-decoration: underline;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 .topnav__list {
   list-style: none;
   align-items: center;
@@ -43,28 +105,56 @@ ul {
   background-repeat: no-repeat;
   border-radius: 50%;
 }
-
+/* Image */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50;
 }
-.page {
-  width: 100%;
-  height: 100%;
+/* Search */
+.search {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 580px;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  border: 0.1px solid var(--border-color);
+  border-radius: 30px;
 }
+
+/* French */
 .francais {
   text-align: center;
   padding-top: 15px;
 }
-.main{
-}
-.search {
+/* Button*/
+button {
+  display: flex;
   text-align: center;
   justify-content: center;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 
 }
+.buttonsearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 36px;
+  padding: 0 2rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 0.7rem;
+  background-color: var(--button-search-background);
+  color: var(--button-search-font);
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+}
+
 h1 {
 
 }
@@ -76,17 +166,4 @@ body {
 display: flex;
 text-align: center;
 padding: 15px;
-}
-
-
-.button {
-  background-color: #999999;
-  border: none;
-  color: black;
-  font-size: 14px;
-  font-family: arial, sans-serif;
-  color: #bdc1c6;
-  margin: 0;
-  padding: 15px 32px;
-}
 }
